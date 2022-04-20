@@ -35,7 +35,7 @@ def generate_launch_description():
     # In case of the transforms (tf), currently, there doesn't seem to be a better alternative
     # https://github.com/ros/geometry2/issues/32
     # https://github.com/ros/robot_state_publisher/pull/30
-    remappings = [("/tf", "tf"), ("/tf_static", "tf_static"), ("map_udpates", "slam_toolbox/update")]
+    remappings = [("/tf", "tf"), ("/tf_static", "tf_static")]
 
     node = Node(
         package="multirobot_map_merge",
