@@ -38,7 +38,6 @@ def generate_launch_description():
         executable="map_merge",
         parameters=[
             config,
-            {"use_sim_time": use_sim_time},
         ],
         output="screen",
         remappings=remappings,
